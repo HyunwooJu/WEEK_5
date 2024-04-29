@@ -1,4 +1,4 @@
-// 클래스 연습해보기!
+// Test
 
 // [요구사항]
 // 1. Car라는 새로운 클래스를 만들되, 처름 객체를 만들 때는
@@ -18,24 +18,21 @@ class Car {
         this.price = price;
     }
 
-    // 클락션을 울리는 메서드
+    // 클락션 울리게 하는거
     makeNoise() {
         console.log(`${this.modelName}: 빵!`);
     }
-
-    // 해당 자동차가 몇년도 모델인지 출력하는 메서드 작성!
-    printModelYear() {
-        console.log(this.modelName + "은 " + this.modelYear + "년도의 모델입니다.");
+    
+    printType() {
+        console.log(`${this.type}`);
     }
+
 }
 
 // 자동차 만들기
-const car1 = new Car("Sorento", "2023", "e", 5000);
-const car2 = new Car("SM5", "1999", "g", 3000);
-const car3 = new Car("Palisade", "2010", "d", 4500);
+const car1 = new Car("BMW 320d", "2021", "3", "7000");
 car1.makeNoise();
-car1.printModelYear();
+const car2 = new Car("Benz", "2002", "S", "1.1");
 car2.makeNoise();
-car2.printModelYear();
+const car3 = new Car("Hyundai", "2002", "Ioniq 6", "4000");
 car3.makeNoise();
-car3.printModelYear();
